@@ -1,21 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .flexbox-list{
   display: flex;
-  flex-wrap: wrap;
   align-items: stretch;
-  width: 900px;
+  margin: 20px;
 }
 .product-list-item{
-  width: 25%;
   display: flex;
 }
 .product-list-item:hover{
-  box-shadow: inset 0 0 0 3px #e6e6e6;
+  box-shadow: inset 0 0 0 3px black;
 }
 .product-link{
   flex-direction: column;
@@ -24,11 +16,31 @@
 .image-container{
   display: flex;
 }
-.product-image{
-  width: 200px;
-  height: 150px;
-}
 .text-container{
   display: flex;
   flex: 1 1 auto;
+}
+
+.a, .b, .c, .d{
+  height: 100px;
+  width: 100px;
+}
+
+
+.a{
+  background: red;
+}
+.b{
+  background: green;
+}
+.c{
+  background: blue;
+}
+.d{
+  background: orange;
+  height: 125px;
+}
+
+.down .image-container{
+  flex: 1 0 auto;
 }
